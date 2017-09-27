@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use('/', routes)
 
 app.use((req, res) => {
-  res.status(404).render('not_found')
+  res.status(404).render('common/not_found')
 })
 
 app.listen(port, () => {
